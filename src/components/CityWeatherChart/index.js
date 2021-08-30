@@ -14,7 +14,7 @@ const CityWeatherChart = ({ cityName, weekData }) => {
 	const weeklyWeather = Object.keys(weekData).map((dayData) => (
 		<div className="card m-auto mb-4" key={dayData}>
 			<div className="d-flex card-body">
-				<h5 class="card-title my-auto">{dayData}</h5>
+				<h5 className="card-title my-auto">{dayData}</h5>
 				<ResponsiveContainer width="85%" height="100%">
 					<LineChart
 						data={weekData[dayData]}
